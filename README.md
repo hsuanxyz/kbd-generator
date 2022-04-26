@@ -1,6 +1,6 @@
 # KbdGenerator
 
-#### [kbd.hsuan.xyz](https://kbd.hsuan.xyz)
+#### [kbd.hsuan.xyz](https://kbd.hsuan.xyz) is inspired by [kCaps](https://kcaps.app/), and thanks [@ftium4](https://twitter.com/ftium4) for letting me know about it
 
 <p align="center">
     <img alt="web site screenshot" src="./screenshot/screenshot.png" width="800">
