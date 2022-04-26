@@ -1,0 +1,34 @@
+<h2>Source Code</h2>
+<div class="highlight">
+  <pre><code>{{code}}</code></pre>
+  <app-clipboard-copy [value]="code"></app-clipboard-copy>
+</div>
+
+<h2>Preview</h2>
+
+<h4>Github</h4>
+
+<p class="preview">
+  <ng-container *ngFor="let key of symbolizeKeys; let last = last">
+    <kbd>{{key}}</kbd>
+    <ng-container *ngIf="!last">
+      <ng-container *ngIf="option?.separator; else space"> + </ng-container>
+      <ng-template #space>&ngsp;</ng-template>
+    </ng-container>
+  </ng-container>
+</p>
+
+<h4>Stackoverflow</h4>
+
+<p class="preview stackoverflow">
+  <ng-container *ngFor="let key of symbolizeKeys; let last = last">
+    <kbd>{{key}}</kbd>
+    <ng-container *ngIf="!last">
+      <ng-container *ngIf="option?.separator; else space"> + </ng-container>
+      <ng-template #space>&ngsp;</ng-template>
+    </ng-container>
+  </ng-container>
+</p>
+
+
+

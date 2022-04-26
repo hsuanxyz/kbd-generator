@@ -1,0 +1,34 @@
+<h2>Option</h2>
+<fieldset>
+  <legend>Choose format:</legend>
+
+  <form [formGroup]="form">
+    <div>
+      <input type="radio" id="symbols-and-chars" formControlName="symbols" [value]="symbolsFormats.SymbolsAndCharacters"
+             checked>
+      <label for="symbols-and-chars">Symbols and Characters (<kbd>⇧ Shift</kbd>&nbsp;<kbd>⌘ Command</kbd>&nbsp;<kbd>⌫ Delete</kbd>…)</label>
+    </div>
+
+    <div>
+      <input type="radio" id="only-chars"  formControlName="symbols" [value]="symbolsFormats.OnlyCharacters">
+      <label for="only-chars">Only Characters (<kbd>Shift</kbd>&nbsp;<kbd>Command</kbd>&nbsp;<kbd>Delete</kbd>…)</label>
+    </div>
+
+    <div>
+      <input type="radio" id="only-symbols" formControlName="symbols" [value]="symbolsFormats.OnlySymbols">
+      <label for="only-symbols">Only Symbols (<kbd>⇧</kbd>&nbsp;<kbd>⌘</kbd>&nbsp;<kbd>⌫</kbd>…)</label>
+    </div>
+
+    <br>
+
+    <div>
+      <input type="checkbox" formControlName="separator" id="separator">
+      <label for="separator">Use Separator (<kbd>⌘</kbd> + <kbd>S</kbd>)</label>
+    </div>
+
+    <div>
+      <input type="checkbox" formControlName="shiftIn" id="shift-in">
+      <label for="shift-in">Shift In characters (<kbd>!</kbd><kbd>@</kbd><kbd>#</kbd>…)</label>
+    </div>
+  </form>
+</fieldset>

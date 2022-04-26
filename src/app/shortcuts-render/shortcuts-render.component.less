@@ -1,0 +1,37 @@
+:host {
+
+  display: flex;
+  flex-direction: column;
+
+  --s-prose-line-height: 1.5;
+  --highlight-color: var(--black-750);
+  .stackoverflow {
+    kbd {
+      display: inline-block;
+      margin: 0 0.1em;
+      padding: 0.1em 0.6em;
+      font-family: var(--ff-sans);
+      font-size: var(--fs-fine);
+      line-height: var(--s-prose-line-height);
+      color: var(--black-800);
+      text-shadow: 0 1px 0 var(--white);
+      background-color: var(--black-075);
+      border: 1px solid var(--black-300);
+      border-radius: var(--br-sm);
+      box-shadow: 0 1px 1px hsl(210deg 8% 5% / 15%), inset 0 1px 0 0 hsl(0deg 0% 100%);
+      overflow-wrap: break-word;
+      white-space: nowrap;
+    }
+  }
+
+  .highlight {
+    position: relative;
+    margin-bottom: 0;
+    app-clipboard-copy {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+    }
+  }
+
+}

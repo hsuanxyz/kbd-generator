@@ -1,0 +1,38 @@
+:host {
+  color: #24292f;
+  background: #f6f8fa;
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid rgba(27,31,36,0.15);
+  border-radius: 6px;
+  appearance: none;
+  opacity: .8;
+
+  &:hover, &:focus, &:active {
+    opacity: 1;
+  }
+
+  .copy {
+    fill: #57606a;
+  }
+
+  .check {
+    fill: #1a7f37;
+  }
+
+  &.copying {
+    pointer-events: none;
+  }
+
+  &.disabled {
+    display: none;
+  }
+}
