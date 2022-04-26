@@ -13,6 +13,7 @@ specifiers:
   '@angular/platform-browser': ~13.3.4
   '@angular/platform-browser-dynamic': ~13.3.4
   '@angular/router': ~13.3.4
+  '@angular/service-worker': ~13.3.4
   '@types/jasmine': ~3.10.0
   '@types/mousetrap': ^1.6.9
   '@types/node': ^12.11.1
@@ -40,6 +41,7 @@ dependencies:
   '@angular/platform-browser': 13.3.4_1ba029caeda3f151d67dbb57714316d9
   '@angular/platform-browser-dynamic': 13.3.4_525b5353924c13b0f5403172b5d29310
   '@angular/router': 13.3.4_b2940901e59847ae198c1a8670619bec
+  '@angular/service-worker': 13.3.4_33fd1b3cce310d440d2359e7f6ea2310
   github-markdown-css: 5.1.0
   hotkeys-js: 3.9.0
   mousetrap: 1.6.5
@@ -48,7 +50,7 @@ dependencies:
   zone.js: 0.11.5
 
 devDependencies:
-  '@angular-devkit/build-angular': 13.3.3_a0eaa518685a135867d7528276d6427e
+  '@angular-devkit/build-angular': 13.3.3_a6fc545816cf62ea4c5439b3e06af798
   '@angular/cli': 13.3.3
   '@angular/compiler-cli': 13.3.4_bcdbc97a6e5bf5083bfa2c4f18063ac8
   '@types/jasmine': 3.10.6
@@ -89,7 +91,7 @@ packages:
       - chokidar
     dev: true
 
-  /@angular-devkit/build-angular/13.3.3_a0eaa518685a135867d7528276d6427e:
+  /@angular-devkit/build-angular/13.3.3_a6fc545816cf62ea4c5439b3e06af798:
     resolution: {integrity: sha512-iEpNF3tF+9Gw+qQKL63fPFHIvWokJdrgVU4GzENQ5QeL8zk8iYTEbH3jWogq5tWy5+VmNP/mKkasq9i78lRiYw==}
     engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
@@ -120,6 +122,7 @@ packages:
       '@angular-devkit/build-webpack': 0.1303.3_c42d66f338fdf8eb26480f9fc4b04152
       '@angular-devkit/core': 13.3.3
       '@angular/compiler-cli': 13.3.4_bcdbc97a6e5bf5083bfa2c4f18063ac8
+      '@angular/service-worker': 13.3.4_33fd1b3cce310d440d2359e7f6ea2310
       '@babel/core': 7.16.12
       '@babel/generator': 7.16.8
       '@babel/helper-annotate-as-pure': 7.16.7
@@ -416,6 +419,19 @@ packages:
       '@angular/core': 13.3.4_rxjs@7.4.0+zone.js@0.11.5
       '@angular/platform-browser': 13.3.4_1ba029caeda3f151d67dbb57714316d9
       rxjs: 7.4.0
+      tslib: 2.4.0
+    dev: false
+
+  /@angular/service-worker/13.3.4_33fd1b3cce310d440d2359e7f6ea2310:
+    resolution: {integrity: sha512-YzViEDq5UbrIpme6Y7EpZpf9YDbwqT4gjFWLFaZ416XSTXmkKE9sEVoddt+7ds+ziwsmix85OhLH7fmVhhXqwQ==}
+    engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0}
+    hasBin: true
+    peerDependencies:
+      '@angular/common': 13.3.4
+      '@angular/core': 13.3.4
+    dependencies:
+      '@angular/common': 13.3.4_@angular+core@13.3.4+rxjs@7.4.0
+      '@angular/core': 13.3.4_rxjs@7.4.0+zone.js@0.11.5
       tslib: 2.4.0
     dev: false
 

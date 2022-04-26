@@ -7,7 +7,7 @@ import hotkeys from "hotkeys-js";
   styleUrls: ['./capture-area.component.less'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    'tabindex': "-1"
+    'tabindex': "1"
   }
 })
 export class CaptureAreaComponent implements OnInit {
@@ -17,6 +17,8 @@ export class CaptureAreaComponent implements OnInit {
   constructor(private elementRef: ElementRef<HTMLElement>, private ngZone: NgZone) { }
 
   ngOnInit(): void {
+    this.elementRef.nativeElement.focus();
+
    this.ngZone.runOutsideAngular(() => {
      hotkeys('*', {
        element: this.elementRef.nativeElement
