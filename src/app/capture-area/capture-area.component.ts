@@ -7,7 +7,7 @@ import hotkeys from "hotkeys-js";
   styleUrls: ['./capture-area.component.less'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    'tabindex': "1"
+    'tabindex': "0"
   }
 })
 export class CaptureAreaComponent implements OnInit {

@@ -34,7 +34,8 @@
               "src/favicon.ico",
               "src/robots.txt",
               "src/assets",
-              "src/manifest.webmanifest"
+              "src/manifest.webmanifest",
+              "src/google4df031098619c53a.html"
             ],
             "styles": [
               "src/styles.less"
