@@ -120,7 +120,7 @@ export class ShortcutsRenderComponent implements OnChanges {
             return s ? s : c;
         }
       })
-    this.code = this.symbolizeKeys.map(s => `<kbd>${s}</kbd>`).join(this.option?.separator ? " + " : " ");
+    this.code = this.symbolizeKeys.map(s => `<kbd>${s}</kbd>`).join(this.option?.separator ? " + " : "");
   }
 
 }
