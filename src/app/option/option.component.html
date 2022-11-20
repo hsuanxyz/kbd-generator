@@ -6,29 +6,32 @@
     <div>
       <input type="radio" id="symbols-and-chars" formControlName="symbols" [value]="symbolsFormats.SymbolsAndCharacters"
              checked>
-      <label for="symbols-and-chars">Symbols and Characters (<kbd>⇧ Shift</kbd>&nbsp;<kbd>⌘ Command</kbd>&nbsp;<kbd>⌫ Delete</kbd>…)</label>
+      <label for="symbols-and-chars">Key names with symbols (<kbd>⇧ Shift</kbd>&nbsp;<kbd>⌘
+          Command</kbd>&nbsp;<kbd>⌫ Delete</kbd>…)</label>
     </div>
 
     <div>
-      <input type="radio" id="only-chars"  formControlName="symbols" [value]="symbolsFormats.OnlyCharacters">
-      <label for="only-chars">Only Characters (<kbd>Shift</kbd>&nbsp;<kbd>Command</kbd>&nbsp;<kbd>Delete</kbd>…)</label>
+      <input type="radio" id="only-chars" formControlName="symbols" [value]="symbolsFormats.OnlyCharacters">
+      <label for="only-chars">Key names only
+        (<kbd>Shift</kbd>&nbsp;<kbd>Command</kbd>&nbsp;<kbd>Delete</kbd>…)</label>
     </div>
 
     <div>
       <input type="radio" id="only-symbols" formControlName="symbols" [value]="symbolsFormats.OnlySymbols">
-      <label for="only-symbols">Only Symbols (<kbd>⇧</kbd>&nbsp;<kbd>⌘</kbd>&nbsp;<kbd>⌫</kbd>…)</label>
+      <label for="only-symbols">Symbols only (<kbd>⇧</kbd>&nbsp;<kbd>⌘</kbd>&nbsp;<kbd>⌫</kbd>…)</label>
     </div>
 
     <br>
 
     <div>
       <input type="checkbox" formControlName="separator" id="separator">
-      <label for="separator">Use Separator (<kbd>⌘</kbd> + <kbd>S</kbd>)</label>
+      <label for="separator">Use "+" as separator (<kbd>⌘</kbd> + <kbd>S</kbd>)</label>
     </div>
 
     <div>
       <input type="checkbox" formControlName="shiftIn" id="shift-in">
-      <label for="shift-in">Shift In characters (<kbd>!</kbd><kbd>@</kbd><kbd>#</kbd>…)</label>
+      <label for="shift-in">Shift number row (output <kbd>!</kbd><kbd>@</kbd><kbd>#</kbd> instead of
+        <kbd>1</kbd><kbd>2</kbd><kbd>3</kbd>)</label>
     </div>
   </form>
 </fieldset>
