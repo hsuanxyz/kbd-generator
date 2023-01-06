@@ -109,10 +109,10 @@ export class ShortcutsRenderComponent implements OnChanges {
         } else {
           c = key!.name[0]
         }
-        s = key!.name?.[1] ? `${key!.name?.[1]} ` : '';
+        s = key!.name?.[1] ? `${key!.name?.[1]}` : '';
         switch (this.option?.symbols) {
           case SymbolsFormat.SymbolsAndCharacters:
-            return `${s}${c}`;
+            return `${s}${s ? ' ' : ''}${c}`;
           case SymbolsFormat.OnlyCharacters:
             return c;
           case SymbolsFormat.OnlySymbols:
@@ -120,7 +120,7 @@ export class ShortcutsRenderComponent implements OnChanges {
             return s ? s : c;
         }
       })
-    this.code = this.symbolizeKeys.map(s => `<kbd>${s}</kbd>`).join(this.option?.separator ? " + " : " ");
+    this.code = this.symbolizeKeys.map(s => `<kbd>${s}</kbd>`).join(this.option?.separator ? " + " : "");
   }
 
 }
